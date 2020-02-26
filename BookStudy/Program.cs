@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 namespace BookStudy
 {
     public class Program // не статик
-    {
+    {//для теста
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
