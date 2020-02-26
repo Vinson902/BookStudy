@@ -1,0 +1,30 @@
+﻿@model BookStudy.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="widtrh=device-width"/>
+    <title>Thanks</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body class="text-center">
+    <p>
+        <h1>Thank you, @Model.name!</h1>
+        @if (Model.willAttend == true)
+        {
+            @:It's great that yo're coming. The drinks are already in the frige!
+        }
+        else
+        {
+            @:Sorry to hear thsat you can't make it, but thanks for letting us know.
+        }
+    </p>
+    Click <a class="nav-link" asp-action="listResponses">here</a>
+    to see who is coming.
+</body>
+</html>
