@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BookStudy
 {
-    public class Program // не статик
+    public class Program 
     {//для теста
         public static void Main(string[] args)
         {
