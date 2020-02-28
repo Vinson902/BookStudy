@@ -8,6 +8,11 @@ namespace BookStudy.Controllers
 {
     public class HomeController : Controller
     {
+        public ViewResult mainPage()
+        {
+            return View("MainPage");
+        }
+
         public ViewResult index()
         {
             int hour = DateTime.Now.Hour;
@@ -40,5 +45,6 @@ namespace BookStudy.Controllers
         {
             return View(Repository.guests.Where(r => r.willAttend == true));
         }
+
     }
 }
