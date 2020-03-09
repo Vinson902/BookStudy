@@ -22,7 +22,6 @@ namespace BookStudy
                 {
                     webBuilder.UseStartup<Startup>();
                 });
-        //any comment for test
-        //tatrararara
+        //comment for changes
     }
 }
