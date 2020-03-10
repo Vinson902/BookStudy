@@ -15,7 +15,7 @@ namespace BookStudy.Models
             ErrorMessage = "Please, enter a valid e mail address")]
         public string email { get; set; }
         [Required(ErrorMessage = "Please, enter you phone")]
-        public string phone { get; set; }
+        public int phone { get; set; }
         [Required(ErrorMessage = "Please, specify whether you'll attend")]
         public bool? willAttend { get; set; }
     }
