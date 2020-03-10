@@ -8,12 +8,12 @@ namespace BookStudy.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult mainPage()
+        public ViewResult MainPage()
         {
             return View("MainPage");
         }
 
-        public ViewResult index()
+        public ViewResult Index()
         {
             int hour = DateTime.Now.Hour;
             ViewBag.Greeting = hour < 12 ? "GoodMorning" : "GoodAfternoon";
@@ -21,13 +21,13 @@ namespace BookStudy.Controllers
         }
 
         [HttpGet]
-        public ViewResult rspvForm()
+        public ViewResult RspvForm()
         {
             return View();
         }
 
         [HttpPost]
-        public ViewResult rspvForm(GuestResponse guestResponse)
+        public ViewResult RspvForm(GuestResponse guestResponse)
         {
             if (ModelState.IsValid)
             {
@@ -41,7 +41,7 @@ namespace BookStudy.Controllers
 
         }
 
-        public ViewResult listResponses()
+        public ViewResult ListResponses()
         {
             return View(Repository.guests.Where(r => r.willAttend == true));
         }
