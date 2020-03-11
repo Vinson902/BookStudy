@@ -27,7 +27,7 @@ namespace BookStudy
         public void ConfigureServices(IServiceCollection services)
         {
             //get connection string from configure file
-            string connection = Configuration.GetConnectionString("HostConnection");
+            string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(connection));
             services.AddControllersWithViews();

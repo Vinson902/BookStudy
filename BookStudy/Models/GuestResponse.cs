@@ -8,6 +8,8 @@ namespace BookStudy.Models
 {
     public class GuestResponse
     {
+        [Key]
+        public int Id { get; set; }
         [Required(ErrorMessage = "Please, enter you name")]
         public string name { get; set; }
         [Required(ErrorMessage = "Please, enter you email")]

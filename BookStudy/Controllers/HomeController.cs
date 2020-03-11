@@ -45,6 +45,11 @@ namespace BookStudy.Controllers
         {
             return View(Repository.guests.Where(r => r.willAttend == true));
         }
+        
+        public ViewResult Privacy()
+        {
+            return View();
+        }
 
     }
 }
