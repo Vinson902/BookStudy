@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookStudy.Controllers
 {
+    //was senn by Andrew
     public class HomeController : Controller
     {
         public ViewResult MainPage()
@@ -45,11 +46,10 @@ namespace BookStudy.Controllers
         {
             return View(Repository.guests.Where(r => r.willAttend == true));
         }
-        
+
         public ViewResult Privacy()
         {
             return View();
         }
-
     }
 }
